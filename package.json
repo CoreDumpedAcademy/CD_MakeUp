@@ -1,0 +1,31 @@
+{
+  "name": "cd_makeup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-sass": "node-sass sass/ -o css/",
+    "sass-watch": "node-sass -w sass/ -o css/",
+    "start": "npm run compile-sass & npm run sass-watch & http-server -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoreDumped-ETSISI/CD_MakeUp.git"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoreDumped-ETSISI/CD_MakeUp/issues"
+  },
+  "homepage": "https://github.com/CoreDumped-ETSISI/CD_MakeUp#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
