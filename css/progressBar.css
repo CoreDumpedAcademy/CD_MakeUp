@@ -1,0 +1,115 @@
+/*$colors: ();
+ *$colors: map-merge(
+ *  (
+ *    "blue":       $blue,
+ *    "indigo":     $indigo,
+ *    "purple":     $purple,
+ *    "pink":       $pink,
+ *    "red":        $red,
+ *    "orange":     $orange,
+ *    "yellow":     $yellow,
+ *    "green":      $green,
+ *    "teal":       $teal,
+ *    "cyan":       $cyan,
+ *    "white":      $white,
+ *    "gray":       $gray-600,
+ *    "gray-dark":  $gray-800
+ *  ),
+ *  $colors
+ *);
+ *
+ *$grays: ();
+ *$grays: map-merge(
+ *  (
+ *    "100": $gray-100,
+ *    "200": $gray-200,
+ *    "300": $gray-300,
+ *    "400": $gray-400,
+ *    "500": $gray-500,
+ *    "600": $gray-600,
+ *    "700": $gray-700,
+ *    "800": $gray-800,
+ *    "900": $gray-900
+ *  ),
+ *  $grays
+ *);
+ *
+ *$primary:       $blue;
+ *$secondary:     $gray-600;
+ *$success:       $green;
+ *$info:          $cyan;
+ *$warning:       $yellow;
+ *$danger:        $red;
+ *$light:         $gray-100;
+ *$dark:          $gray-800;
+ *
+ *$theme-colors: ();
+ *$theme-colors: map-merge(
+ *  (
+ *    "primary":    $primary,
+ *    "secondary":  $secondary,
+ *    "hola":    $success,
+ *    "info":       $info,
+ *    "warning":    $warning,
+ *    "danger":     $danger,
+ *    "light":      $light,
+ *    "dark":       $dark
+ *  ),
+ *  $theme-colors
+ *); */
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 1.5rem 0; }
+  to {
+    background-position: 0 0; } }
+
+.progress {
+  display: flex;
+  height: 1.5rem;
+  overflow: hidden;
+  font-size: 1.5rem;
+  background-color: lighten grey;
+  border-radius: 0.25rem;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.progress-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 7%;
+  background: #212529;
+  background: -webkit-linear-gradient(legacy-direction(90deg), #212529, #6c757d);
+  background: linear-gradient(90deg, #212529, #6c757d);
+  border-radius: 0.25rem; }
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: orange;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #d6b01b;
+  transition: width 0.6s ease;
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  width: 75%; }
+  @media screen and (prefers-reduced-motion: reduce) {
+    .progress-bar {
+      transition: none; } }
+  .progress-bar else {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem; }
+
+.progress-bar-striped {
+  background-image: linear-gradient(45deg, lighten green 25%, transparent 25%, transparent 50%, lighten green 50%, lighten green 75%, transparent 75%, transparent);
+  background-size: 1.5rem 1.5rem; }
+
+.progress-bar-animated {
+  animation: progress-bar-stripes 0.75s linear infinite; }

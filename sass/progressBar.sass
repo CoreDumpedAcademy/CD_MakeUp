@@ -1,0 +1,56 @@
+@import variables
+@import mixins
+
+@keyframes progress-bar-stripes
+  from
+    background-position: $p-height 0
+
+  to
+    background-position: 0 0
+
+.progress
+  display: flex
+  height: $p-height
+  overflow: hidden
+
+  // force rounded corners by cropping it
+  font-size: $p-font-size
+  background-color: $p-bg-color
+
+  +border-radius($p-border-radius)
+  +box-shadow($p-box-shadow)
+
+  width: 90%
+
+  +centerer
+
+.progress-box
+  +centerer
+
+  width: 50%
+  height: 7%
+
+  +linear-gradient(90deg, $gray-900, $gray-600)
+  +border-radius($p-border-radius)
+
+.progress-bar
+  display: flex
+  flex-direction: column
+  justify-content: center
+  color: $pb-color
+  text-align: center
+  white-space: nowrap
+  background-color: $gold
+
+  +transition($pb-transition)
+  +pb-border
+
+  width: $pb-width
+
+.progress-bar-striped
+  +gradient-striped
+
+  background-size: $p-height $p-height
+
+.progress-bar-animated
+  animation: progress-bar-stripes $pb-animation-timing

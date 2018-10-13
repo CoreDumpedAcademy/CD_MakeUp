@@ -1,0 +1,50 @@
+@import variables
+@import mixins
+
+.my-switch
+  +centerer
+
+.switch
+  display: block
+  position: relative
+  width: $sw-width
+  height: $sw-height
+
+.switch input
+  display: none
+
+.my-slider
+  position: absolute
+  cursor: pointer
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: $sw-color
+  transition: $sw-transition
+
+  +border-radius($sw-border-radius)
+  +box-shadow($sw-box-shadow)
+
+  &:before
+    position: absolute
+    content: ""
+    bottom: 14px
+    top: 8px
+    background-color: $yellow
+    transition: $sw-transition
+
+input:checked + .my-slider
+  background-color: $black
+
+  &:before
+    transform: translateX(47px) rotateZ(45deg)
+    background: $white
+
+.my-slider.round
+  &:before
+    width: 43%
+    height: 43%
+    border-top-left-radius: 50px
+    border-top-right-radius: 50px
+    transform: rotateZ(-45deg)
