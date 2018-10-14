@@ -6314,3 +6314,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 h1 {
   color: pink; }
+
+#mapid {
+  height: 400px;
+  width: 100%; }
