@@ -23,3 +23,24 @@ This will do the following:
 
 Therefore, once it is running, you just edit the sass and html, and refresh the page as you normally do, the server will handle the rest for you.
 Besis.
+
+# Progress bar
+
+To implement the progress bar, just copy this into the html:
+
+<div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+</div>
+
+Write ``progress-bar-stripped`` if you want stripes on the progress bar, and ``progress-bar-animated`` if you want an animation on it.
+
+# Switch 
+
+To implement the switch, just copy this into the html:
+
+<div class="my-switch">
+   <label class="switch">
+     <input type="checkbox">
+     <span class="my-slider round"></span>
+   </label>
+</div>
