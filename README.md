@@ -32,7 +32,7 @@ To implement the progress bar, just copy this into the html:
 </div>
 ```
 
-Write `progress-bar-stripped` if you want stripes on the progress bar, and ``progress-bar-animated`` if you want an animation on it.
+Write `progress-bar-stripped` if you want stripes on the progress bar, and ``progress-bar-animated`` if you want an animation on it. The width determines how the progress bar is going, the 75% above is just an example, later it will be linked to something and will not use the width.
 
 # Switch 
 
