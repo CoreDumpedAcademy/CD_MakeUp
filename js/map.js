@@ -9,17 +9,33 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 }).addTo(mymap);
 
 var marker = L.marker([51.5, -0.09]).addTo(mymap);
-marker.bindPopup("<b>Avenida de la Justisia</b>").openPopup();
+marker.bindPopup("<b>Prueba a pulsar sobre mis colegas geométricos</b>").openPopup();
 
-var popup = L.popup();
-
-function onMapClick(e) {
-    popup
-        .setLatLng(e.latlng)
-        .setContent("You clicked the map at " + e.latlng.toString())
-        .openOn(mymap);
-}
-
+var circle = L.circle([51.508, -0.11], {
+    color: 'blue',
+    fillColor: 'blue',
+    fillOpacity: 0.5,
+    radius: 500
+}).addTo(mymap);
+circle.bindPopup("<h1>Esto está en h1</h1>");
+
+var polygon = L.polygon([
+    [51.509, -0.08],
+    [51.503, -0.06],
+    [51.51, -0.047]],
+    {color: 'green',
+    fillColor:'green',
+    fillOpacity:0.5
+}).addTo(mymap);
+polygon.bindPopup("<h3>Esto está moooe guapo</h3>");
+
+var popup = L.popup();
+
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("You clicked the map at " + e.latlng.toString())
+        .openOn(mymap);
+}
+
 mymap.on('click', onMapClick);
-
-L.control.remove(mymap.map);
