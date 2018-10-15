@@ -1,0 +1,71 @@
+//mixins
+
+//shape
+=border-radius($mainRadius: $pbBorderRadius)
+  @if $enable-rounded
+    border-radius: $mainRadius
+
+=border-top-radius($mainRadius)
+  @if $enable-rounded
+    border-top-left-radius: $mainRadius
+    border-top-right-radius: $mainRadius
+
+=border-right-radius($mainRadius)
+  @if $enable-rounded
+    border-top-right-radius: $mainRadius
+    border-bottom-right-radius: $mainRadius
+
+=border-bottom-radius($mainRadius)
+  @if $enable-rounded
+    border-bottom-right-radius: $mainRadius
+    border-bottom-left-radius: $mainRadius
+
+=border-left-radius($mainRadius)
+  @if $enable-rounded
+    border-top-left-radius: $mainRadius
+    border-bottom-left-radius: $mainRadius
+
+=pb-border
+  @if $pb-width != 100%
+    border-top-right-radius: 0.75rem
+    border-bottom-right-radius: 0.75rem
+
+  else
+    border-top-right-radius: 0.25rem
+    border-bottom-right-radius: 0.25rem
+
+//shadow
+=box-shadow($p-shadow...)
+  @if $enable-shadows
+    box-shadow: $p-shadow
+
+//animations
+=gradient-striped($color: lighten $pb-bg-color, $angle: 45deg)
+  background-image: linear-gradient($angle, $color 25%, transparent 25%, transparent 50%, $color 50%, $color 75%, transparent 75%, transparent)
+
+//transitions
+=transition($transition...)
+  @if $enable-transitions
+    @if length($transition) == 0
+      transition: $transition-base
+    @else
+      transition: $transition
+
+  @media screen and (prefers-reduced-motion: reduce)
+    transition: none
+
+=centerer
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+//colors
+=linear-gradient($direction, $color-stops...)
+  background: nth(nth($color-stops, 1), 1)
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops)
+  background: linear-gradient($direction, $color-stops)
+
+  
+  
+  
