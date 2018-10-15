@@ -1,4 +1,9 @@
-var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+const primaryColor = "pink";
+const secondaryColor = "";
+const thirdColor = "";
+const forthColor = "";
+const fifthColor = "";
+var mymap = L.map('mapid').setView([51.505, -0.09], 12);
 
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
 	maxZoom: 18,
@@ -13,7 +18,7 @@ marker.bindPopup("<b>Prueba a pulsar sobre mis colegas geométricos</b>").openPo
 
 var circle = L.circle([51.508, -0.11], {
     color: 'blue',
-    fillColor: 'blue',
+    fillColor: primaryColor,
     fillOpacity: 0.5,
     radius: 500
 }).addTo(mymap);
