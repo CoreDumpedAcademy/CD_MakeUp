@@ -46,3 +46,33 @@ To implement the switch, just copy this into the html:
    </label>
 </div>
 ```
+
+# Map View
+
+To implement the map view, just copy this into the html:
+
+```html
+<head>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+	 crossorigin="" />
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3-sm-12 offset-md-1">
+				<div id="map-view" class="card">
+					<div id="mapid" class="leaflet-container card-img-top" tabindex="0">
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">Av. de la Justisia</h5>
+						<p class="card-text">Ven a visitarnos ... o no, a mí me da igual</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+	<script src="js/map.js"></script>
+</body>
