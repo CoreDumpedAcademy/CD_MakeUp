@@ -6,8 +6,17 @@
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125); }
 
+  .list-group-horizontal {
+    flex-direction: row;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: -4px;
+    margin-right: 0;
+  }
+
 .list-group-horizontal .list-group-item {
   display: inline-block;
+  flex-direction: row;
   margin-bottom: 0;
   margin-left: -4px;
   margin-right: 0; }
