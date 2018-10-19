@@ -6323,3 +6323,6 @@ h1 {
 
 section {
   padding: 10px; }
+
+#mapid {
+  height: 300px; }
