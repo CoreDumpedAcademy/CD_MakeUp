@@ -46,3 +46,25 @@ To implement the switch, just copy this into the html:
    </label>
 </div>
 ```
+# Button
+
+CD_Makeup library modifies buttons giving them a special hover effect:
+
+```html
+  <button class="btn btn-primary btn-hover-close">>Button_</button>
+```
+
+# Cards
+
+CD_Makeup cards are also very simple to implement, they basicly include the button and some styling to links:
+
+```html
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="img">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary btn-hover-close">Go somewhere</a>
+        </div>
+      </div>
+```
