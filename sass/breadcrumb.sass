@@ -1,0 +1,78 @@
+body
+  padding-top: 10px
+
+.breadcrumb-arrow
+  height: 60px
+  padding: 0
+  line-height: 36px
+  list-style: none
+  background-color: #e6e9ed
+  li
+    &:first-child a
+      border-radius: 4px 0 0 4px
+      -webkit-border-radius: 4px 0 0 4px
+      -moz-border-radius: 4px 0 0 4px
+    display: inline-block
+    vertical-align: top
+    a, span
+      display: inline-block
+      vertical-align: top
+    &:not(:first-child)
+      margin-left: 0px
+    + li:before
+      padding: 0
+      content: ""
+    span
+      padding: 0 10px
+    a, &:not(:first-child) span
+      height: 36px
+      padding: 0 10px 0 25px
+      line-height: 36px
+    &:first-child a
+      padding: 0 10px
+    a
+      position: relative
+      color: #fff
+      text-decoration: none
+      background-color: #3bafda
+      border: 1px solid #3bafda
+    &:first-child a
+      padding-left: 10px
+    a
+      &:after
+        position: absolute
+        top: -1px
+        width: 0
+        height: 0
+        content: ''
+        border-top: 18px solid transparent
+        border-bottom: 18px solid transparent
+      &:before
+        position: absolute
+        top: -1px
+        width: 0
+        height: 0
+        content: ''
+        border-top: 18px solid transparent
+        border-bottom: 18px solid transparent
+        right: -10px
+        z-index: 3
+        border-left-color: #3bafda
+        border-left-style: solid
+        border-left-width: 11px
+      &:after
+        right: -11px
+        z-index: 2
+        border-left: 11px solid #2494be
+      &:focus, &:hover
+        background-color: #4fc1e9
+        border: 1px solid #4fc1e9
+      &:focus:before, &:hover:before
+        border-left-color: #4fc1e9
+      &:active
+        background-color: #2494be
+        border: 1px solid #2494be
+        &:after, &:before
+          border-left-color: #2494be
+    span
+      color: #434a54
