@@ -68,3 +68,62 @@ CD_Makeup cards are also very simple to implement, they basicly include the butt
   </div>
 </div>
 ```
+
+# Modals
+
+## Large Modal
+
+This HTML element will create a modal spanning the whole width of the screen
+
+```html
+<div class="modal fade" id="myModalLarge" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header background-primary">
+        <h4 class="modal-title">Modal Header</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Some quick example text to build on the modal body and make up the bulk of the modal's content</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+## Short modal
+
+This HTML element will create a shorter modal that will not take the whole screen
+
+```html
+<div class="modal fade" id="myModalLarge" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header background-primary">
+        <h4 class="modal-title">Modal Header</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Some quick example text to build on the modal body and make up the bulk of the modal's content</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+# Password Field
+
+This CD_MakeUp element will show the typed characters as points to hide them from view
+
+```html
+<div class="form-group">
+  <label for="exampleInputPassword1">Password</label>
+  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+</div>
+```
