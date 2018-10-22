@@ -102,6 +102,35 @@ CD_Makeup cards are also very simple to implement, they basicly include the butt
 </div>
 ```
 
+# Soy @raular4322 y no se escribir markdown
+CD_MakeUp group list is also easy to implement, make a container, inside a div row, and then a second div with the list-group tag for vertical lists, or list-group-horizontal for horizontal lists. The components of the list go inside the list-group list with a list-group-item. As you can see its simple
+```html
+<div class="container">
+		<div class="row" style="padding-top:50px">
+			
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+	
+				<div class="list-group-horizontal">
+					<a href="#" class="list-group-item active">Item One</a>
+					<a href="#" class="list-group-item">Item Two</a>
+					<a href="#" class="list-group-item">Item Three</a>
+					<a href="#" class="list-group-item">Item Four</a>
+				</div>
+	
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+	
+				<div class="list-group-horizontal">
+					<a href="#" class="list-group-item">Item One</a>
+					<a href="#" class="list-group-item active">Item Two</a>
+					<a href="#" class="list-group-item">Item Three</a>
+					<a href="#" class="list-group-item">Item Four</a>
+				</div>
+	
+			</div>
+	
+		</div>
+```
 # Modals
 
 ## Large Modal
