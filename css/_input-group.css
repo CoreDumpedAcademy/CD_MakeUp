@@ -1,0 +1,15 @@
+.md-form.input-group label {
+    top: 0;
+    margin-bottom: 0;
+}
+.md-form.input-group .input-group-text {
+    background-color: #007bff;
+}
+.md-form.input-group .input-group-text.md-addon {
+    border: none;
+    background-color: transparent;
+    font-weight: 500;
+}
+.md-form.input-group .form-control {
+    margin: 0;
+}
