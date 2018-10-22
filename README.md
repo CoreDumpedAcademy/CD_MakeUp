@@ -215,3 +215,15 @@ This CD_MakeUp element make the function of a button, and it´s a decorative ele
 	<!-- Indicates a dangerous or potentially negative action -->
 	<button type="button" class="btn btn-danger ribbon">Danger</button>
 ```
+
+
+# Loader
+
+Used to mark loading elements
+
+```html
+<div class="container">
+	<div class="box">
+	<div class="clock"></div>
+</div>
+```
