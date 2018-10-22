@@ -263,3 +263,14 @@ This CD_MakeUp element make the function of a footer. You can use with/without t
 
 	</footer>
 ```
+
+# Loader
+
+Used to mark loading elements
+
+```html
+<div class="container">
+	<div class="box">
+	<div class="clock"></div>
+</div>
+```
