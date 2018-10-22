@@ -216,9 +216,19 @@ This CD_MakeUp element make the function of a button, and it´s a decorative ele
 	<button type="button" class="btn btn-danger ribbon">Danger</button>
 ```
 
+# Parallax 
+
+This CD_MakeUp element make the function of a parallax container: an image will be stack on the background and, when you scroll, the container goes over the image.
+
+```html		
+	<div class="parallax-container" style="height: 500px; border: 1em outset pink;">
+		<div class="parallax" style="background-image: url('images/sass_logo.png');"></div>
+	</div>
+```
+
 # Footer 
 
-This CD_MakeUp element make the function of a footer. You can use with/without the two main blocks: a container for a grid and copyright block for a href to your main site
+This CD_MakeUp element make the function of a footer. You can use with/without the two main blocks: a container for a grid and copyright block for a href to your main site.
 
 ```html
 	<footer class="page-footer font-small">
@@ -247,7 +257,7 @@ This CD_MakeUp element make the function of a footer. You can use with/without t
 			</div>
 
 		</div>
-		<div class="footer-copyright text-center py-3">© 2018 Copyright:
+		<div class="footer-copyright text-center py-3">2018 By:
 			<a href="https://github.com/HackatonTeam-CoreDumped/CD_MakeUp"> CoreDumped.es</a>
 		</div>
 
