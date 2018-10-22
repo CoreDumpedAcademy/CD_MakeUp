@@ -47,6 +47,7 @@ To implement the switch, just copy this into the html:
 </div>
 ```
 
+
 # Map View
 
 To implement the map view, just copy this into the html:
@@ -76,3 +77,86 @@ To implement the map view, just copy this into the html:
 	<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
 	<script src="js/map.js"></script>
 </body>
+```
+
+# Button
+
+CD_Makeup library modifies buttons giving them a special hover effect:
+
+```html
+<button class="btn btn-primary btn-hover-close">>Button_</button>
+```
+
+# Cards
+
+CD_Makeup cards are also very simple to implement, they basicly include the button and some styling to links:
+
+```html
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="img">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary btn-hover-close">Go somewhere</a>
+  </div>
+</div>
+```
+
+# Modals
+
+## Large Modal
+
+This HTML element will create a modal spanning the whole width of the screen
+
+```html
+<div class="modal fade" id="myModalLarge" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header background-primary">
+        <h4 class="modal-title">Modal Header</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Some quick example text to build on the modal body and make up the bulk of the modal's content</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+## Short modal
+
+This HTML element will create a shorter modal that will not take the whole screen
+
+```html
+<div class="modal fade" id="myModalLarge" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header background-primary">
+        <h4 class="modal-title">Modal Header</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Some quick example text to build on the modal body and make up the bulk of the modal's content</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+# Password Field
+
+This CD_MakeUp element will show the typed characters as points to hide them from view
+
+```html
+<div class="form-group">
+  <label for="exampleInputPassword1">Password</label>
+  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+</div>
+```

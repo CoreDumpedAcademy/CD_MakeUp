@@ -1,0 +1,114 @@
+/*$colors: ();
+ *$colors: map-merge(
+ *  (
+ *    "blue":       $blue,
+ *    "indigo":     $indigo,
+ *    "purple":     $purple,
+ *    "pink":       $pink,
+ *    "red":        $red,
+ *    "orange":     $orange,
+ *    "yellow":     $yellow,
+ *    "green":      $green,
+ *    "teal":       $teal,
+ *    "cyan":       $cyan,
+ *    "white":      $white,
+ *    "gray":       $gray-600,
+ *    "gray-dark":  $gray-800
+ *  ),
+ *  $colors
+ *);
+ *
+ *$grays: ();
+ *$grays: map-merge(
+ *  (
+ *    "100": $gray-100,
+ *    "200": $gray-200,
+ *    "300": $gray-300,
+ *    "400": $gray-400,
+ *    "500": $gray-500,
+ *    "600": $gray-600,
+ *    "700": $gray-700,
+ *    "800": $gray-800,
+ *    "900": $gray-900
+ *  ),
+ *  $grays
+ *);
+ *
+ *$primary:       $blue;
+ *$secondary:     $gray-600;
+ *$success:       $green;
+ *$info:          $cyan;
+ *$warning:       $yellow;
+ *$danger:        $red;
+ *$light:         $gray-100;
+ *$dark:          $gray-800;
+ *
+ *$theme-colors: ();
+ *$theme-colors: map-merge(
+ *  (
+ *    "primary":    $primary,
+ *    "secondary":  $secondary,
+ *    "hola":    $success,
+ *    "info":       $info,
+ *    "warning":    $warning,
+ *    "danger":     $danger,
+ *    "light":      $light,
+ *    "dark":       $dark
+ *  ),
+ *  $theme-colors
+ *); */
+.large-box {
+  font-family: sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #000000;
+  background: pink !important;
+  overflow: hidden;
+  padding: 15px;
+  border-radius: 35px 5px 35px 5px;
+  -moz-border-radius: 35px 5px 35px 5px;
+  -webkit-border-radius: 35px 5px 35px 5px;
+  border: 2px solid #e83e8c;
+  text-align: center;
+  min-width: 400px;
+  max-width: 1200px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.medium-box {
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #000000;
+  background: pink !important;
+  overflow: hidden;
+  padding: 12px;
+  border-radius: 35px 5px 35px 5px;
+  -moz-border-radius: 35px 5px 35px 5px;
+  -webkit-border-radius: 35px 5px 35px 5px;
+  border: 2px solid #e83e8c;
+  text-align: center;
+  min-width: 400px;
+  max-width: 900px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.small-box {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  color: #000000;
+  background: pink !important;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 35px 5px 35px 5px;
+  -moz-border-radius: 35px 5px 35px 5px;
+  -webkit-border-radius: 35px 5px 35px 5px;
+  border: 2px solid #e83e8c;
+  text-align: center;
+  min-width: 400px;
+  max-width: 600px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+/*# sourceMappingURL=TextView.css.map */
