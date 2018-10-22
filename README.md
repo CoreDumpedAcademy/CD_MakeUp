@@ -127,3 +127,29 @@ This CD_MakeUp element will show the typed characters as points to hide them fro
   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
 </div>
 ```
+
+# Button 
+
+This CD_MakeUp element make the function of a button, and it´s a decorative element
+
+```html
+<div class="row">
+		
+		<div class="col-md-6">       <!-- Standard button -->
+	<button type="button" class="btn button.ribbon">Default</button>
+	
+	<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+	<button type="button" class="btn btn-primary ribbon">Primary</button>
+	
+	<!-- Indicates a successful or positive action -->
+	<button type="button" class="btn btn-success ribbon">Success</button>
+	
+	<!-- Contextual button for informational alert messages -->
+	<button type="button" class="btn btn-info ribbon">Info</button>
+	
+	<!-- Indicates caution should be taken with this action -->
+	<button type="button" class="btn btn-warning ribbon">Warning</button>
+	
+	<!-- Indicates a dangerous or potentially negative action -->
+	<button type="button" class="btn btn-danger ribbon">Danger</button>
+```
