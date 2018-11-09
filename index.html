@@ -2,188 +2,203 @@
 
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
 
-    <title>The Supreme styles</title>
-    <meta name="description" content="CoreDumped">
-    <meta name="author" content="CoreDumped">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/loader.css">
-    <link rel="stylesheet" href="css/list.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
-                                                                                   crossorigin="" />
-    <link rel="stylesheet" href="css/button.css">
-  </head>
-
-  <body>
-    <h1>Holiii</h1>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-3-sm-12 offset-md-1">
-          <div id="map-view" class="card">
-            <div id="mapid" class="leaflet-container card-img-top" tabindex="0">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Av. de la Justisia</h5>
-              <p class="card-text">Ven a visitarnos ... o no, a mí me da igual</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <section>
-      <button type="button" class="btn btn-primary">Primary</button>
-
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Open Modal</button>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalLarge">Open Large Modal</button>
-    </section>
-
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
-      <div class="modal-dialog">
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header background-primary">
-            <h4 class="modal-title">Modal Header</h4>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="modal-body">
-            <p>Esto es un modal normal, puedes introducir dentro cualquier elemento compatible.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="myModalLarge" role="dialog">
-      <div class="modal-dialog modal-lg">
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header background-primary">
-            <h4 class="modal-title">Modal Header</h4>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="modal-body">
-            <p>Esto es un modal largo, puedes introducir dentro cualquier elemento compatible.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <section class="background-secondary">
-      <form>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </section>
+	<title>The Supreme styles</title>
+	<meta name="description" content="CoreDumped">
+	<meta name="author" content="CoreDumped">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <div class="container">
-      <div class="row">
-        <h2>Bootstrap Ribbon Buttons</h2>
-      </div>
+	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/list.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+	 crossorigin="" />
+	<link rel="stylesheet" href="css/_input-group.css">
+	<link rel="stylesheet" href="css/button.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/parallax.css">
+	<link rel="stylesheet" href="css/loader.css">
+</head>
 
-      <div class="row">
+<div class="md-form mt-0">
+	<input class="form-control" type="text" placeholder="Search" aria-label="Search">
+</div>
 
-        <div class="col-md-6">       <!-- Standard button -->
-          <button type="button" class="btn button.ribbon">Default</button>
+<body>
+	<h1>Holiii</h1>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3-sm-12 offset-md-1">
+				<div id="map-view" class="card">
+					<div id="mapid" class="leaflet-container card-img-top" tabindex="0">
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">Av. de la Justisia</h5>
+						<p class="card-text">Ven a visitarnos ... o no, a mí me da igual</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section>
+		<div class="float-left">Float left on all viewport sizes</div><br>
+		<button type="button" class="btn btn-primary">Primary</button>
 
-          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-          <button type="button" class="btn btn-primary ribbon">Primary</button>
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Open Modal</button>
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalLarge">Open Large Modal</button>
+	</section>
 
-          <!-- Indicates a successful or positive action -->
-          <button type="button" class="btn btn-success ribbon">Success</button>
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header background-primary">
+					<h4 class="modal-title">Modal Header</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<p>Esto es un modal normal, puedes introducir dentro cualquier elemento compatible.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
-          <!-- Contextual button for informational alert messages -->
-          <button type="button" class="btn btn-info ribbon">Info</button>
+	<div class="modal fade" id="myModalLarge" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header background-primary">
+					<h4 class="modal-title">Modal Header</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<p>Esto es un modal largo, puedes introducir dentro cualquier elemento compatible.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
-          <!-- Indicates caution should be taken with this action -->
-          <button type="button" class="btn btn-warning ribbon">Warning</button>
+	<section class="background-secondary">
+		<form>
+			<div class="form-group">
+				<label for="exampleInputPassword1">Password</label>
+				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</section>
 
-          <!-- Indicates a dangerous or potentially negative action -->
-          <button type="button" class="btn btn-danger ribbon">Danger</button>
-        </div>
-      </div>
-    </div>
+
+	<div class="container">
+		<div class="row">
+			<h2>Bootstrap Ribbon Buttons</h2>
+		</div>
+
+		<div class="row">
+
+			<div class="col-md-6">
+				<!-- Standard button -->
+				<button type="button" class="btn button.ribbon">Default</button>
+
+				<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+				<button type="button" class="btn btn-primary ribbon">Primary</button>
+
+				<!-- Indicates a successful or positive action -->
+				<button type="button" class="btn btn-success ribbon">Success</button>
+
+				<!-- Contextual button for informational alert messages -->
+				<button type="button" class="btn btn-info ribbon">Info</button>
+
+				<!-- Indicates caution should be taken with this action -->
+				<button type="button" class="btn btn-warning ribbon">Warning</button>
+
+				<!-- Indicates a dangerous or potentially negative action -->
+				<button type="button" class="btn btn-danger ribbon">Danger</button>
 
 
-    <div class="container">
-      <div class="row" style="padding-top:50px">
+				<div class="container">
+					<div class="row" style="padding-top:50px">
 
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
 
-          <div class="list-group">
-            <a href="#" class="list-group-item active">Item One</a>
-            <a href="#" class="list-group-item">Item Two</a>
-            <a href="#" class="list-group-item">Item Three</a>
-            <a href="#" class="list-group-item">Item Four</a>
-          </div>
+							<div class="list-group">
+								<a href="#" class="list-group-item active">Item One</a>
+								<a href="#" class="list-group-item">Item Two</a>
+								<a href="#" class="list-group-item">Item Three</a>
+								<a href="#" class="list-group-item">Item Four</a>
+							</div>
 
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
 
-          <div class="list-group">
-            <a href="#" class="list-group-item">Item One</a>
-            <a href="#" class="list-group-item active">Item Two</a>
-            <a href="#" class="list-group-item">Item Three</a>
-            <a href="#" class="list-group-item">Item Four</a>
-          </div>
+							<div class="list-group">
+								<a href="#" class="list-group-item">Item One</a>
+								<a href="#" class="list-group-item active">Item Two</a>
+								<a href="#" class="list-group-item">Item Three</a>
+								<a href="#" class="list-group-item">Item Four</a>
+							</div>
 
-        </div>
+						</div>
 
-      </div>
-    </div>
+					</div>
+				</div>
 
-    <div class="container">
-      <div class="row" style="padding-top:50px">
+				<div class="container">
+					<div class="row" style="padding-top:50px">
 
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
 
-          <div class="list-group-horizontal">
-            <a href="#" class="list-group-item active">Item One</a>
-            <a href="#" class="list-group-item">Item Two</a>
-            <a href="#" class="list-group-item">Item Three</a>
-            <a href="#" class="list-group-item">Item Four</a>
-          </div>
+							<div class="list-group-horizontal">
+								<a href="#" class="list-group-item active">Item One</a>
+								<a href="#" class="list-group-item">Item Two</a>
+								<a href="#" class="list-group-item">Item Three</a>
+								<a href="#" class="list-group-item">Item Four</a>
+							</div>
 
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
 
-          <div class="list-group-horizontal">
-            <a href="#" class="list-group-item">Item One</a>
-            <a href="#" class="list-group-item active">Item Two</a>
-            <a href="#" class="list-group-item">Item Three</a>
-            <a href="#" class="list-group-item">Item Four</a>
-          </div>
+							<div class="list-group-horizontal">
+								<a href="#" class="list-group-item">Item One</a>
+								<a href="#" class="list-group-item active">Item Two</a>
+								<a href="#" class="list-group-item">Item Three</a>
+								<a href="#" class="list-group-item">Item Four</a>
+							</div>
 
-        </div>
+						</div>
 
-      </div>
-    </div>
+					</div>
 
-    <div class="col-md-3-sm-12 offset-md-2">
-      <div class="large-box">
-        <p>Holiii</p>
-      </div>
-    </div>
-    <div class="col-md-3-sm-12 offset-md-3">
-      <div class="medium-box">
-        <p>Holiii</p>
-      </div>
-    </div>
+					<div class="col-md-3-sm-12 offset-md-2">
+						<div class="large-box">
+							<p>Holiii</p>
+						</div>
+					</div>
+					<div class="col-md-3-sm-12 offset-md-3">
+						<div class="medium-box">
+							<p>Holiii</p>
+						</div>
+					</div>
+
+					<div class="col-md-3-sm-12 offset-md-4">
+						<div class="small-box">
+							<p>Holiii</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
     <div class="col-md-3-sm-12 offset-md-4">
       <div class="small-box">
@@ -196,22 +211,62 @@
       </div>
     </div>
 
-    <!-- Bootstrap -->
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<div class="container">
+		<div class="parallax-container" style="height: 500px; border: 1em outset pink;">
+			<div class="parallax" style="background-image: url('images/sass_logo.png');"></div>
+		</div>
+	</div>
 
-    <!-- Leaflet (map view) -->
-    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
-                                                                  crossorigin=""></script>
-    <script src="js/map.js"></script>
-    <!-- PASTE ALL THE SCRIPTS DOWN HERE, NOT UP -->
+	<br>
 
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                                                                   crossorigin="anonymous"></script>
+	<footer class="page-footer font-small">
+		<div class="container-fluid text-center text-md-left">
 
-    <!-- Popper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-                                                                                            crossorigin="anonymous"></script>
-  </body>
+			<div class="row">
+				<div class="col-md-6 mt-3">
+
+					<h5 class="text-uppercase font-weight-bold">About CD_MakeUp</h5>
+					<p>This is style library did by CoreDumped Hackaton Team. We was working on this library
+						for use in Hackaton and other CoreDumped projects. You can use this library
+						following the license terms.
+					</p>
+
+				</div>
+
+				<hr class="clearfix w-100 d-md-none pb-3">
+
+				<div class="col-md-6 mt-3">
+
+					<h5 class="text-uppercase font-weight-bold">About CoreDumped</h5>
+					<p>You can know more about CoreDumped in our site <a href="https://coredumped.es/">coredumped.es</a></p>
+
+				</div>
+
+			</div>
+
+		</div>
+		<div class="footer-copyright text-center py-3">© 2018 Copyright:
+			<a href="https://github.com/HackatonTeam-CoreDumped/CD_MakeUp"> CoreDumped.es</a>
+		</div>
+
+	</footer>
+
+	<!-- Bootstrap -->
+	<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<!-- Leaflet (map view) -->
+	<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+	 crossorigin=""></script>
+	<script src="js/map.js"></script>
+	<!-- PASTE ALL THE SCRIPTS DOWN HERE, NOT UP -->
+
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous"></script>
+
+	<!-- Popper -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script>
+</body>
 
 </html>

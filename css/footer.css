@@ -1,0 +1,83 @@
+/*$colors: ();
+ *$colors: map-merge(
+ *  (
+ *    "blue":       $blue,
+ *    "indigo":     $indigo,
+ *    "purple":     $purple,
+ *    "pink":       $pink,
+ *    "red":        $red,
+ *    "orange":     $orange,
+ *    "yellow":     $yellow,
+ *    "green":      $green,
+ *    "teal":       $teal,
+ *    "cyan":       $cyan,
+ *    "white":      $white,
+ *    "gray":       $gray-600,
+ *    "gray-dark":  $gray-800
+ *  ),
+ *  $colors
+ *);
+ *
+ *$grays: ();
+ *$grays: map-merge(
+ *  (
+ *    "100": $gray-100,
+ *    "200": $gray-200,
+ *    "300": $gray-300,
+ *    "400": $gray-400,
+ *    "500": $gray-500,
+ *    "600": $gray-600,
+ *    "700": $gray-700,
+ *    "800": $gray-800,
+ *    "900": $gray-900
+ *  ),
+ *  $grays
+ *);
+ *
+ *$primary:       $blue;
+ *$secondary:     $gray-600;
+ *$success:       $green;
+ *$info:          $cyan;
+ *$warning:       $yellow;
+ *$danger:        $red;
+ *$light:         $gray-100;
+ *$dark:          $gray-800;
+ *
+ *$theme-colors: ();
+ *$theme-colors: map-merge(
+ *  (
+ *    "primary":    $primary,
+ *    "secondary":  $secondary,
+ *    "hola":    $success,
+ *    "info":       $info,
+ *    "warning":    $warning,
+ *    "danger":     $danger,
+ *    "light":      $light,
+ *    "dark":       $dark
+ *  ),
+ *  $theme-colors
+ *); */
+.page-footer {
+  width: 103%;
+  background-color: pink !important;
+  color: grey; }
+  .page-footer h1 {
+    color: black; }
+  .page-footer h2 {
+    color: black; }
+  .page-footer h3 {
+    color: black; }
+  .page-footer h4 {
+    color: black; }
+  .page-footer h5 {
+    color: black; }
+  .page-footer a {
+    font-weight: bolder;
+    color: grey; }
+
+.footer-copyright {
+  color: grey;
+  background-color: rgba(0, 0, 0, 0.1); }
+  .footer-copyright > a {
+    font-weight: bolder;
+    color: grey; }
